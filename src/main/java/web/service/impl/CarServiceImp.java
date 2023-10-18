@@ -1,14 +1,15 @@
-package web.service;
+package web.service.impl;
 
 import org.springframework.stereotype.Service;
 import web.model.Car;
+import web.service.CarService;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class CarServiceImp implements CarService{
+public class CarServiceImp implements CarService {
     Long id = (long) 0;
     List<Car> cars = new ArrayList<>();
     {
