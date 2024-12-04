@@ -19,7 +19,6 @@ public class CarServiceImp implements CarService {
         cars.add(new Car(++id, "Lada", "Vesta", 15000));
         cars.add(new Car(++id, "Volkswagen", "Golf", 24000));
     }
-
     @Override
     public List<Car> listCarsCount(int count) {
         if (count >= 5) return cars;
