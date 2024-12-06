@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 public class CarServiceImp implements CarService {
     Long id = (long) 0;
     List<Car> cars = new ArrayList<>();
+
     {
         cars.add(new Car(++id, "Tesla", "Model s", 30000));
         cars.add(new Car(++id, "Mercedes-benz", "124", 40000));
@@ -19,6 +20,7 @@ public class CarServiceImp implements CarService {
         cars.add(new Car(++id, "Lada", "Vesta", 15000));
         cars.add(new Car(++id, "Volkswagen", "Golf", 24000));
     }
+
     @Override
     public List<Car> listCarsCount(int count) {
         if (count >= 5) return cars;
