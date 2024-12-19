@@ -8,9 +8,7 @@ import web.service.UserService;
 
 @Controller
 @RequestMapping("/user")
-
 public class UserController {
-
     private final UserService userService;
 
     public UserController(UserService userService) {
